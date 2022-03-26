@@ -1,0 +1,72 @@
+<html>
+
+<head>
+<style>
+body {
+  background-image: url('crop.jpg');background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+select{
+width:250px;
+margin:10px;
+font-size:30px;
+color:blue;
+
+}
+select:focus
+{
+min-width:150px;
+width:auto;
+}
+k{
+color:black;
+font-size:35px;
+font-weight:bold;
+}
+
+</style>
+</head>
+<body>
+<form action="crop.php" method="post">
+<center>
+<k>Select Crop:<k><br>
+<select name="soil" id="soil">
+  <option value="alluvial" name="alluvial">Alluvial Soil</option>
+  <option value="black" name="black">Black Soil</option>
+  <option value="redandyellow" name="redandyellow">Red and Yellow Soil</option>
+  <option value="laterite" name="laterite">laterite Soil</option>
+  <option value="arid" name="arid">Arid Soil</option>
+  <option value="mountainandforest" name="Mountainandforest">Mountain and Forest Soil</option>
+  <option value="desert" name="desertsoil">Desert Soil</option>
+</select><br>
+<k>Select Season:</k><br>
+<select name="season" id="season">
+<option value="kharif" name="kharif">Kharif</option>
+  <option value="rabi" name="rabi">Rabi</option>
+  <option value="zaid" name="zaid">Zaid</option>
+
+</select><br><br>
+   
+<k>Time Period</k><br>
+<select name="time" id="time">
+  <option value="1" name="1">1 month</option>
+  <option value="2" name="2">2 months</option>
+  <option value="3" name="3">3 months</option>
+  <option value="4" name="4">4 months</option>
+  <option value="5" name="5">5 months</option>
+  <option value="6" name="6">6 months</option>
+  <option value="7" name="7">7 months</option>
+  <option value="8" name="8">8 months</option>
+  <option value="9" name="9">9 months</option>
+  <option value="10" name="10">10 months</option>
+  <option value="11" name="11">11 months</option>
+  <option value="12" name="12">12 months</option>
+ 
+</select><br><br>
+<input type="submit" value="submit" name="submit">
+</form>
+
+</center>
+</body>
+</html>
